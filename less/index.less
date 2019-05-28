@@ -1,0 +1,234 @@
+*{
+	margin: 0;
+	padding:0;
+  box-sizing:border-box;
+  font-size: 0;
+}
+a{
+	text-decoration: none;		
+}
+a:hover{
+	color: #35b558;
+}
+body{
+	font-family: PingFangSC-Light,'STHeiti Light','helvetica neue','hiragino sans gb',
+	arial,'microsoft yahei ui','microsoft yahei',simsun,sans-serif;
+	background-color:#f4f4f4;
+}
+
+
+.banner-section{
+	height: 290px;
+	background-image: url(../img/banner.jpg);
+	background-position:center;
+	.banner-content{
+		width: 1000px;
+		margin:0 auto;
+		position: relative;
+		.banner-navigation{
+			position:absolute;
+			top: 20px;
+			left: 0;
+			.banner-navigation-text{
+				font-size: 12px;
+				color: #fff;
+			}
+			.banner-navigation-text.active{
+				color: #bbbbbb;
+			}
+		}
+		.banner-head-list{
+			position:absolute;
+			left: 0;
+			top: 50px;
+			list-style: none;
+			.banner-head-item{
+				width: 200px;
+				line-height: 44px;
+				background-color:#fff;
+				color:#333;
+				font-size: 14px;
+				padding-left: 20px;
+				border-bottom:1px solid #f1f1f1;
+				cursor: pointer;
+			}
+			.banner-item-img{
+				position: absolute;
+				width: 200px;
+				height: 240px;
+				background-image: url(../img/banner-member.jpg);
+				
+				.banner-item-link{
+					position:absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom:50px;
+					display: inline-block;
+					text-align: center;
+					width: 96px;
+					font-size: 14px;
+					color: #333;
+					line-height: 30px;
+					background-color:#fff29a;
+					border-bottom:1px solid #d8c239;
+				}
+				.item-link-sub{
+					position:absolute;
+					left: 50%;
+					transform: translateX(-50%);
+					bottom:20px;
+					font-size: 12px;
+					color: #dfdef7;
+				}
+			}
+		}
+		.banner-maincontent{
+			position:absolute;
+			top: 0;
+			right: 0;
+			padding-top:50px;	
+			.maincontent-top-text{
+				display: inline-block;
+			}		
+		}
+		.maincontent-top{
+			.maincontent-title{
+				font-size: 24px;
+				color: #fff;
+				line-height: 24px;
+				font-weight: 500;
+				margin-bottom: 16px;
+			}
+			.maincontent-text{
+				width: 460px;
+				font-size: 12px;
+				line-height: 20px;
+				color: #b9bbbd;
+			}
+			.maincontent-video{
+				display: inline-block;
+				vertical-align: top;
+				width: 272px;
+				height: 152px;
+				margin-left: 40px;
+
+				background-color:#ff6700;
+				font-size: 50px;
+
+			}
+		}
+		.maincontent-bottom{
+			.maincontent-gratitude{
+				font-size: 12px;
+				color: #b9bbbd;
+				line-height: 12px;
+
+			}
+			.gratitude-list{
+				margin-top: 16px;
+				.gratitude-item{
+					display: inline-block;
+					width: 90px;
+					height: 40px;
+					margin-right: 12px;
+					background-color: rgba(0,0,0,.4);
+				}
+			}
+		}
+	}
+}
+.min-container{
+	width: 1000px;
+	margin:0 auto;
+	display: flex;
+	justify-content: flex-end;
+	.min-container-content{
+		width: 770px;
+	}
+}
+.content-head{
+	height: 70px;
+	.content-head-title{
+		font-size: 18px;
+		color: #333;
+		line-height: 70px;
+		font-weight: 500;
+	}
+}
+.dynamic-content{
+	width: 100%;
+	min-height: 370px;
+	.dynamic-mincontent{
+		background-color:#fafafa;
+	}
+	.dynamic-list{
+		display: inline-block;
+		width: 490px;
+		background-color:#fff;
+		padding:24px 36px 0 22px;
+		overflow: hidden;
+		list-style: none;
+		margin-right: 10px;
+		.dynamic-item{
+			margin-bottom: 14px;
+			.dynamic-item-img{
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin-right: 10px;
+				vertical-align: bottom;
+			}
+			.dynamic-item-text{
+				display: inline-block;
+				width: 320px;
+				font-size: 12px;
+				color: #333;
+				line-height: 14px;
+				font-weight: 500;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow:ellipsis;
+				vertical-align: middle;
+			}
+			& span{
+				display: inline-block;
+				font-size: 12px;
+				color: #a7a7a7;
+				float: right;
+			}
+		}
+	}
+
+	.dynamic-right{
+		display: inline-block; 
+		vertical-align: top;
+		width: 260px;
+	}
+
+	.dynamic-list-rigth{
+		display: inline-block;
+		padding-top:10px;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+  	align-content: space-between;
+  	.list-rigth-flex{
+			flex-basis: 100%;
+		  display: flex;
+		  justify-content: space-between;
+		  margin-bottom: 10px;
+  	}
+		.list-rigth-item{
+			width: 125px;
+			height: 135px;
+			background-color:#ff6700;
+			font-size: 20px;
+			text-align: center;
+			& img{
+				width: 100%;
+				height: 100%;
+				
+			}
+		}
+	}
+}
